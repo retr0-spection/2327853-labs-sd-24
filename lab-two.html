@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* remove padding caused by body tag */
+
+      body {
+        margin: 0;
+      }
+
+      .flexblock {
+        display: flex;
+        justify-content: center;
+      }
+      .center-text {
+        text-align: center;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .image {
+        width: 600px;
+        height: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .article {
+        border-style: solid;
+        border-color: gray;
+        border-width: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 8px;
+      }
+
+      .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: rgb(42, 42, 42);
+      }
+
+      .menu {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        gap: 1em;
+      }
+
+      /* nav items are white in contrast to bg */
+
+      .nav-item,
+      .footer-item {
+        color: white;
+      }
+
+      /* removing underline in a tag under menu class only */
+      .menu a {
+        text-decoration: none;
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: rgb(42, 42, 42);
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <h3 class="nav-item">Welcome to Software Design Website</h3>
+      <menu class="menu">
+        <li><a class="nav-item" href="#">About Us</a></li>
+        <li><a class="nav-item" href="#">Services</a></li>
+        <li><a class="nav-item" href="#">Contact Us</a></li>
+      </menu>
+    </nav>
+    <header>
+      <h3 class="center-text">About Us</h3>
+      <p class="center-text">
+        We are a company dedicated to providing excellent services to our
+        customers.
+      </p>
+      <img
+        class="image"
+        src="https://images.unsplash.com/photo-1597733336794-12d05021d510?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      />
+    </header>
+      <h3 class="center-text">Our Services</h3>
+      <block class="flexblock">
+        <article class="article">
+          <h3 class="center-text">Web Development</h3>
+          <p class="center-text">
+            We specialize in creating responsive and user-friendly websites.
+          </p>
+          <img
+            class="image"
+            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          />
+        </article>
+        <article class="article">
+          <h3 class="center-text">Graphic Design</h3>
+          <p class="center-text">
+            Our talented designers can bring your ideas to life with stunning
+            visuals.
+          </p>
+          <img
+            class="image"
+            src="https://1.bp.blogspot.com/-MnayL73aThs/XSX_kwqBNnI/AAAAAAAAITQ/G_SmO3GajNUBPhlfAxK134ckXeBiDDthwCLcBGAs/s1600/IMG_5928-crop.jpg"
+          />
+        </article>
+      </block>
+
+    <footer class="footer">
+      <p class="footer-item">
+        ©&nbsp2024 The Lucky Company. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
